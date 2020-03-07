@@ -11,8 +11,8 @@ import java.io.InputStream;
 public class SqlSessionUtil {
     private static SqlSessionFactory sqlSessionFactory=null;
     public static void init(String config) throws IOException {
-        SqlSessionFactoryBuilder sqlSessionFactoryBuilder=null;
-        InputStream stream=null;
+        SqlSessionFactoryBuilder sqlSessionFactoryBuilder;
+        InputStream stream;
         stream= Resources.getResourceAsStream(config);
         sqlSessionFactoryBuilder=new SqlSessionFactoryBuilder();
         sqlSessionFactory=sqlSessionFactoryBuilder.build(stream);
