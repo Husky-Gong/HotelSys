@@ -16,8 +16,8 @@
     <input type="hidden" name="service"  value="doAdd"/>
     <p>
         Room type:
-        <input type="radio" name="type" value="1" />Standard
-        <input type="radio" name="type" value="2" />Superior
+        <input type="radio" name="type" value="1" />Standard Room
+        <input type="radio" name="type" value="2" />Superior Room
         <input type="radio" name="type" value="3" />President suite
     </p>
     <p>

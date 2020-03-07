@@ -38,9 +38,7 @@
   </select>
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    <!--@mbg.generated-->
-    delete from room
-    where id = #{id,jdbcType=INTEGER}
+    delete from room where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.zx.domain.Room" useGeneratedKeys="true">
     <!--@mbg.generated-->

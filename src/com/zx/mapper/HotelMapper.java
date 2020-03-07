@@ -2,6 +2,8 @@ package com.zx.mapper;
 
 import com.zx.domain.Hotel;
 
+import java.util.List;
+
 public interface HotelMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,6 @@ public interface HotelMapper {
     int updateByPrimaryKeySelective(Hotel record);
 
     int updateByPrimaryKey(Hotel record);
+
+    List<Hotel> selectList();
 }

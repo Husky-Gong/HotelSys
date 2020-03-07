@@ -40,4 +40,14 @@ public class Hotel {
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", mobile='" + mobile + '\'' +
+                '}';
+    }
 }

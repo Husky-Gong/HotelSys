@@ -13,4 +13,6 @@ public interface IRoomService {
     List<Room> queryList(String hotelName);
 
     void deleteByPrimaryKey(String id);
+
+    void add(Room room);
 }
