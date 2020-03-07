@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="javaMapperPackage" value="com.zx.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/src" />
+        <option name="javaModelPackage" value="com.zx.domain" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/src" />
+        <option name="lastDatabaseCrudChooseModuleName" value="HotelSys" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="HotelSys">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.zx.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/src" />
+                  <option name="javaModelPacakge" value="com.zx.domain" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/src" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/src/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="mybatis:hotel">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Hotel" />
+                  <option name="moduleName" value="HotelSys" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="mybatis:room">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Room" />
+                  <option name="moduleName" value="HotelSys" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/src/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>
