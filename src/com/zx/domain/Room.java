@@ -9,7 +9,7 @@ public class Room {
 
     private String info;
 
-    private Integer hotelid;
+    private Integer hotelId;
 
     public Integer getId() {
         return id;
@@ -43,11 +43,45 @@ public class Room {
         this.info = info;
     }
 
-    public Integer getHotelid() {
-        return hotelid;
+    public Integer getHotelId() {
+        return hotelId;
     }
 
-    public void setHotelid(Integer hotelid) {
-        this.hotelid = hotelid;
+    public void setHotelId(Integer hotelId) {
+        this.hotelId = hotelId;
+    }
+    /*
+    Hotel name
+     */
+    private String hotelName;
+    /*
+    Hotel address
+     */
+    private String address;
+
+    public String getHotelName() {
+        return hotelName;
+    }
+
+    public void setHotelName(String hotelName) {
+        this.hotelName = hotelName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    private String mobile;
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 }
