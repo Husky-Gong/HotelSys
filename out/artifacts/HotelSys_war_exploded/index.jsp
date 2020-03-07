@@ -13,7 +13,6 @@
 </head>
 <body>
 <script>
-
   location.href = "room.do?service=list"
 </script>
 </body>

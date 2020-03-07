@@ -109,7 +109,8 @@
     -->
     <!-- 引入 mapper配置文件 -->
     <mappers>
-
+        <mapper resource="resources/mapper/RoomMapper.xml"/>
+        <mapper resource="resources/mapper/HotelMapper.xml"/>
     </mappers>
 
 </configuration>

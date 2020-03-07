@@ -23,7 +23,9 @@ public class RoomController extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             String service = req.getParameter("service");
+            System.out.println(service);
             Method method = this.getClass().getDeclaredMethod(service, HttpServletRequest.class, HttpServletResponse.class);
+
             method.invoke(this, req, resp);
         }catch(Exception e){
             e.printStackTrace();
@@ -39,6 +41,12 @@ public class RoomController extends HttpServlet {
 
         List<Room> rooms = roomService.queryList(hotelName);
         req.setAttribute("rooms",rooms);
-        req.getRequestDispatcher("list.jsp").forward(req.resp);
+        req.getRequestDispatcher("list.jsp").forward(req,resp);
+    }
+
+    public void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        String id = req.getParameter("id");
+        roomService.deleteByPrimaryKey(id);
+        resp.sendRedirect("room.do?service=list");
     }
 }

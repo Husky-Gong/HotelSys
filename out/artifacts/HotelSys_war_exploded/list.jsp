@@ -24,7 +24,7 @@
 </form>
 </p>
 <hr>
-<p><a href="room.do?service=toAdd">Add</a></p>
+<p><a href="add.jsp">Add</a></p>
 <table>
     <tr>
         <th>ID</th>

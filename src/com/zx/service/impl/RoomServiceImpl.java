@@ -21,4 +21,15 @@ public class RoomServiceImpl implements IRoomService {
         sqlSession.close();
         return rooms;
     }
+
+    @Override
+    public void deleteByPrimaryKey(String id) {
+        SqlSession sqlSession=SqlSessionUtil.getSqlSession();
+        RoomMapper roomMapper = SqlSessionUtil.getSqlSession().getMapper(RoomMapper.class);
+        roomMapper.deleteByPrimaryKey(Integer.parseInt(id));
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+
 }

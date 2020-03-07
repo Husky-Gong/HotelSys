@@ -11,4 +11,6 @@ import java.util.List;
 public interface IRoomService {
     // search rooms with hotel name
     List<Room> queryList(String hotelName);
+
+    void deleteByPrimaryKey(String id);
 }
